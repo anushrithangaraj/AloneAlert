@@ -1,0 +1,152 @@
+.safe-zones {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.safe-zones-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.safe-zones-header h3 {
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.safe-zone-form {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.safe-zones-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.no-zones {
+  text-align: center;
+  color: #6c757d;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+}
+
+.safe-zone-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.safe-zone-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+}
+
+.zone-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.zone-icon {
+  font-size: 1.5rem;
+}
+
+.zone-info {
+  flex: 1;
+}
+
+.zone-info h4 {
+  margin: 0 0 0.25rem 0;
+  color: #333;
+}
+
+.zone-type {
+  background: #667eea;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.delete-btn:hover {
+  background: #f8d7da;
+}
+
+.zone-details {
+  font-size: 0.9rem;
+}
+
+.zone-details p {
+  margin: 0.25rem 0;
+}
+
+.zone-details strong {
+  color: #333;
+}
+
+.zone-details .active {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.zone-details .inactive {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .safe-zones {
+    padding: 1rem;
+  }
+  
+  .safe-zones-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .safe-zone-form {
+    padding: 1rem;
+  }
+  
+  .zone-header {
+    gap: 0.75rem;
+  }
+}
